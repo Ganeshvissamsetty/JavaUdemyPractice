@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="GaneshTestPractise">
+	
+  <test thread-count="5" name="Personal loan">
+	  
+    <classes>
+      <class name="TestNG.day1"/>
+      <class name="TestNG.day2x"/>
+    </classes>
+    
+  </test> <!-- Test -->
+  
+  <test name="Car Loan">
+	  <classes>
+		  <class name="TestNG.day3">
+			  
+			  <methods>
+				  <exclude name="MobileCarloanLogin"></exclude>
+			  </methods>
+			  
+			  
+		  </class>
+		  <class name="TestNG.day2x"/>
+	  </classes>
+	 
+	  
+  </test>
+  <test name="Home loan">
+	  <classes>
+		  <class name="TestNG.day4">
+			  <methods>
+				  <include name="MobileHomeloan.*"></include>
+			  </methods>
+		  </class>
+	  </classes>
+	  
+  </test>
+</suite> <!-- Suite -->
